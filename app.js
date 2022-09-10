@@ -17,4 +17,5 @@ app.get('/register', (req,res) => {
     res.sendFile(path.resolve(__dirname,'views','register.html'))
 });
 
+
 app.listen(port, () => console.log(`Server running on port http://localhost:${port}`))
