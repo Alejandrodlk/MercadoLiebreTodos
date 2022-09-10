@@ -29,3 +29,16 @@ header .header__burger{
 header .header__menu{
   display: none;
 }
+
+@media (min-width:361px){
+  header .header__burger{
+    display: none;
+  }
+  header .header__menu{
+    display: block;
+  }
+}
+
+/*@media (min-width:769px){
+
+}*/

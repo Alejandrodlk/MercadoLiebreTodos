@@ -34,7 +34,8 @@
 }
 
 .home main section article .detalle{
-    padding: 0 15px;
+    padding: 15px;
+    border: 1px solid #ebebeb;
 }
 
 .home main section article .detalle .camion{
@@ -47,7 +48,15 @@
     font-size: 20px;
 }
 
+@media (min-width:361px){
+    .home main section article{
+        box-shadow: 0 0 10px rgb(100 , 100 ,100);
+    }
+    .home main section article .detalle h4{
+        display: block;
+    }
+}
 
-/*@media (min-width:769px){
+@media (min-width:769px){
   
-}*/
+}
