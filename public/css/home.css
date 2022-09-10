@@ -1,0 +1,53 @@
+.home main{
+    background-color: var(--colorGrisClaro);
+}
+
+.home main h2{
+    color: var(--colorGrisOscuro);
+    font-size: var(--titular);
+}
+
+.home main section article .detalle p{
+    font-size: var(--precios);
+}
+
+.home main section article .detalle span{
+    font-size: var(--descuentosYDescripciones);
+    color: var(--colorVerde);
+}
+
+.home main section article .detalle h4{
+    font-size: var(--precios);
+    color: var(--colorGrisOscuro);
+    display: none;
+}
+
+.home main section{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0;;
+}
+
+.home main section article{
+    background-color: white;
+    margin: 10px 0;
+}
+
+.home main section article .detalle{
+    padding: 0 15px;
+}
+
+.home main section article .detalle .camion{
+    color: var(--colorVerde);
+    padding: 20px;
+    border: 1px solid var(--colorVerde);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+
+/*@media (min-width:769px){
+  
+}*/
