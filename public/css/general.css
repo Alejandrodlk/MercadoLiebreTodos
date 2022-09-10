@@ -30,6 +30,9 @@ p {
     margin: 0;
 }
 
+input:focus{
+    outline: none;
+}
 
 /*@media (min-width:361px){
 

@@ -28,7 +28,7 @@ footer section.copyr{
 
 }
 
-@media (min-width:769px){
+/* @media (min-width:769px){
     footer{
         display: flex;
         flex-direction: column;
@@ -40,4 +40,4 @@ footer section.copyr{
     footer section{
         padding: 50px 30px 50px;
     }
-}
+} */
