@@ -3,42 +3,155 @@ header {
   padding: 20px 0;
 }
 
-header .superior{
+.box__logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.busqueda {
+  width: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+header .superior {
   padding: 0 20px;
+  display: flex;
 }
 
-.header__logo{
-  width: 50%; 
- }
-header p{
-    text-align: center;
+.busqueda input {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px 25px 5px 5px;
+  height: 35px;
+  max-width: 160px;
 }
 
-header .header__burger{
+.busqueda button {
+  position: absolute;
+  right: 2px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  top: 10px;
+
+}
+
+.header__logo {
+  width: 90%;
+}
+
+header p {
+  text-align: center;
+}
+
+header .header__burger {
   display: block;
   color: white;
   background-color: var(--colorCeleste);
   font-size: 1.5rem;
   padding: 8px;
   margin: 0 auto;
-  width: 25px;
+  width: 40px;
   border-radius: 8px;
   text-align: center;
 }
 
-header .header__menu{
+.box__payment {
+  margin: 20px 0;
+}
+
+header .header__menu {
   display: none;
 }
 
-@media (min-width:361px){
-  header .header__burger{
-    display: none;
-  }
-  header .header__menu{
-    display: block;
-  }
+.box__superior {
+  display: flex;
+  flex-direction: column;
 }
 
-/*@media (min-width:769px){
+@media (min-width:361px) {
+  /* header .header__burger {
+    display: none;
+  } */
 
-}*/
+  .busqueda {
+    width: 160px;
+  }
+
+  .box__logo {
+    width: 160px;
+    margin: 0;
+  }
+
+  .busqueda button {
+    position: absolute;
+    right: 4px;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    top: 10px;
+  }
+
+  /* header .header__menu {
+    display: flex;
+    flex-direction: column;
+
+  } */
+
+}
+
+/* .box__superior {
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+@media (min-width:769px) {
+
+  header .header__burger {
+    display: none;
+  }
+
+  header .header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto auto;
+  }
+
+  .ul_options {
+    display: flex;
+    gap: 15px;
+  }
+
+  .ul_options li {
+    width: max-content;
+    list-style: none;
+  }
+
+  .ul_user {
+    display: flex;
+    gap: 15px;
+  }
+
+  .box__superior {
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+    margin: auto auto;
+  }
+
+  header .superior {
+    width: auto;
+  }
+
+  .busqueda button {
+    top: 18px;
+  }
+}

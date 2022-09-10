@@ -27,3 +27,17 @@ footer section.copyr{
     text-align: initial;
 
 }
+
+@media (min-width:769px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .box__footer__info{
+        display: flex;
+    }
+
+    footer section{
+        padding: 50px 30px 50px;
+    }
+}

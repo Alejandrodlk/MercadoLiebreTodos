@@ -1,24 +1,36 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: var(--body-fonts);
     font-size: var(--cuerpo-texto);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-ul{
+
+ul {
     list-style: none;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-h1,h2,h3,h4,p{
+h1,
+h2,
+h3,
+h4,
+p {
     margin: 0;
 }
+
+
 /*@media (min-width:361px){
 
 }*/

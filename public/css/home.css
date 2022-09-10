@@ -1,44 +1,49 @@
-.home main{
+.home main {
     background-color: var(--colorGrisClaro);
 }
 
-.home main h2{
+.home main h2 {
     color: var(--colorGrisOscuro);
     font-size: var(--titular);
+    width: 100%;
+    text-align: center;
 }
 
-.home main section article .detalle p{
+.home main section article .detalle p {
     font-size: var(--precios);
 }
 
-.home main section article .detalle span{
+.home main section article .detalle span {
     font-size: var(--descuentosYDescripciones);
     color: var(--colorVerde);
 }
 
-.home main section article .detalle h4{
+.home main section article .detalle h4 {
     font-size: var(--precios);
     color: var(--colorGrisOscuro);
     display: none;
 }
 
-.home main section{
+.home main section {
     width: 90%;
     margin: 0px auto;
-    padding: 20px 0;;
+    padding: 20px 0;
+    ;
 }
 
-.home main section article{
+.home main section article {
     background-color: white;
     margin: 10px 0;
+    width: 100%;
 }
 
-.home main section article .detalle{
+.home main section article .detalle {
     padding: 15px;
     border: 1px solid #ebebeb;
+    position: relative;
 }
 
-.home main section article .detalle .camion{
+.home main section article .detalle .camion {
     color: var(--colorVerde);
     padding: 20px;
     border: 1px solid var(--colorVerde);
@@ -46,17 +51,61 @@
     height: 10px;
     border-radius: 50%;
     font-size: 20px;
+    top: -20px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-@media (min-width:361px){
-    .home main section article{
-        box-shadow: 0 0 10px rgb(100 , 100 ,100);
+.home main section article{
+    display:none;
+}
+
+.home main section article:first-child{
+    display: block;
+}
+
+
+@media (min-width:361px) {
+
+    
+    .home main section article {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        width: 48%;
+        
     }
-    .home main section article .detalle h4{
+
+    .home main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        /* gap:10px; */
+
+    }
+
+    .home main section article .detalle h4 {
         display: block;
     }
+
+    .home main section article:nth-child(2){
+        display: block;
+    }
+
 }
 
-@media (min-width:769px){
-  
+@media (min-width:769px) {
+    .home main section article{
+        display: block;
+    }
+    .home main section article {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        width: 23%;
+        
+    }
+
 }
